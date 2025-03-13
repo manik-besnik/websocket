@@ -19,4 +19,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/test-broadcast', GraphController::class);
+Route::get('/graph', GraphController::class);
