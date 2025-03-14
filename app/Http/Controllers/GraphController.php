@@ -10,7 +10,7 @@ class GraphController extends Controller
 {
     public function __invoke(): View
     {
-        event(new GraphBroadcast(['data' => 'hello']));
+        event(new GraphBroadcast(['data' => uniqid()]));
 
         return view('test');
     }

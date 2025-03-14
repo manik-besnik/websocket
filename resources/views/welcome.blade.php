@@ -959,7 +959,7 @@
         if (window.Echo) {
             window.Echo.channel('graph')
                 .listen('GraphBroadcast', (event) => {
-                    console.log('Event received:', event);
+                    console.log('Event received:', event.data.data);
                 });
         } else {
             console.error('Echo is not initialized.');
